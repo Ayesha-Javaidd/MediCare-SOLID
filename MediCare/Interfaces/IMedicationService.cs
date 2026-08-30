@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediCare.Models;
 
 namespace MediCare.Interfaces
 {
-    internal interface IMedicationService
+    public interface IMedicationService
     {
+        void AddMedication(Medication medication);
+
+        void RemoveMedication(Medication medication);
+
+        List<Medication> GetMedications();
     }
 }

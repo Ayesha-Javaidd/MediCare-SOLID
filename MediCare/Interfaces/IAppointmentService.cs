@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediCare.Models;
 
 namespace MediCare.Interfaces
 {
-    internal interface IAppointmentService
+    public interface IAppointmentService
     {
+        void BookAppointment(Appointment appointment);
     }
 }

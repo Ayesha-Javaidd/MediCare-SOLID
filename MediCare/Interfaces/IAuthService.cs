@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
-namespace MediCare.Interfaces
+public interface IAuthService
 {
-    internal interface IAuthService
-    {
-    }
+    object? Login(string username, string password);
 }

@@ -8,7 +8,6 @@ namespace MediCare.Interfaces
     public interface IProviderRepository
     {
         List<Provider> GetAll();
-
         Provider? GetById(int id);
     }
 }
