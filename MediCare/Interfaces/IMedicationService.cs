@@ -12,5 +12,7 @@ namespace MediCare.Interfaces
         void RemoveMedication(Medication medication);
 
         List<Medication> GetMedications();
+
+        Medication GetMedicationById(int id);
     }
 }

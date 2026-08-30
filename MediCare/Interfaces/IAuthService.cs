@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MediCare.Models;
 public interface IAuthService
 {
-    object? Login(string username, string password);
+    User? Login(string username, string password);
 }

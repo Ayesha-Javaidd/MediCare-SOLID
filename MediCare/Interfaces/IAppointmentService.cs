@@ -8,5 +8,6 @@ namespace MediCare.Interfaces
     public interface IAppointmentService
     {
         void BookAppointment(Appointment appointment);
+        List<Appointment> GetAllAppointments();
     }
 }

@@ -12,5 +12,7 @@ namespace MediCare.Interfaces
         void EditUser(User user);
 
         List<User> GetUsers();
+
+        User GetUserById (int id);
     }
 }
