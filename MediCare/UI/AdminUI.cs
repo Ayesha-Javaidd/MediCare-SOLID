@@ -261,7 +261,7 @@ namespace MediCare.UI
             {
                 Console.WriteLine(
                     $"ID: {medication.Id} | " +
-                    $"Name: {medication.Name} | " +
+                    $"Name: {medication.Name} \t| " +
                     $"Price: {medication.Price}");
             }
 
