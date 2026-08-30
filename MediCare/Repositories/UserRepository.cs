@@ -46,7 +46,8 @@ namespace MediCare.Repositories
         {
             List<User> users = GetAll();
 
-            User? existingUser = GetById(user.Id);
+            User? existingUser = users
+                .FirstOrDefault(u => u.Id == user.Id);
 
             if (existingUser == null)
             {
@@ -62,7 +63,8 @@ namespace MediCare.Repositories
         {
             List<User> users = GetAll();
 
-            User? existingUser = GetById(user.Id);
+            User? existingUser = users
+                .FirstOrDefault(u => u.Id == user.Id);
 
             if (existingUser == null)
             {

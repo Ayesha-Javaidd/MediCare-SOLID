@@ -45,7 +45,7 @@ namespace MediCare.Services
 
         public void EditUser(User user)
         {
-            _userRepository.Remove(user);
+            _userRepository.Update(user);
         }
 
         public List<User> GetUsers()

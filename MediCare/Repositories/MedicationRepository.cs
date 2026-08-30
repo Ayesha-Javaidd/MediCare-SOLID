@@ -47,8 +47,8 @@ namespace MediCare.Repositories
         {
             List<Medication> medications = GetAll();
 
-            Medication? existingMedication =
-                GetById(medication.Id);
+            Medication? existingMedication = medications
+                .FirstOrDefault(m => m.Id == medication.Id);
 
             if (existingMedication == null)
             {
